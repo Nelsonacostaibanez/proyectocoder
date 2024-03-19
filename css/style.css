@@ -132,12 +132,6 @@ body {
   overflow: auto;
 }
 
-.contactoform {
-  background-color: #283538;
-  color: #ffffff;
-  margin: 35px;
-}
-
 .seccioncontactos {
   padding: 20px;
   display: flex;
