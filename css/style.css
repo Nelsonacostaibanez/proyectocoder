@@ -33,6 +33,11 @@ Header {
 }
 Header img {
   width: 105px;
+  transition: 1s;
+}
+Header img:hover {
+  height: 70px;
+  width: 70px;
 }
 Header ul {
   list-style-type: none;

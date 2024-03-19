@@ -13,9 +13,14 @@ Header{
     z-index: 200;
   
 
-    img{
+    img {
         width: 105px; ;
-        
+       transition: 1s;
+    }
+
+    img:hover {
+        height: 70px;
+        width: 70px;
     }
 
     ul{
