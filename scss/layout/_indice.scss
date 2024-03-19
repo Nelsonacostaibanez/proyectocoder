@@ -1,3 +1,18 @@
+.mensajeprincipal h1{
+    color: #283538;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 70px 50px;
+    width: 50px;
+    margin-bottom: 200px;
+
+    span.cambiodecolor{
+        color:rgb(243, 87, 87);}
+
+}
+
+
+
+
 .gred-conteiner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
