@@ -367,7 +367,11 @@ footer ul li a{
   .seccioncontactos{
     width: 1fr;
     flex-direction: column;
-   
+    margin-left: 0%;
+  }
+  
+  .seccioncontactos div iframe{
+    width: 100%;
   }
   
   }
@@ -386,10 +390,13 @@ footer ul li a{
   
   
   .seccioncontactos{
-    width: auto;
+    width: 100%;
     display: inline-block;
-   
+   margin-left: 0%;
+  }
+  .seccioncontactos div iframe{
+    width: 100%;
   }
   
-  }
   
+  }
