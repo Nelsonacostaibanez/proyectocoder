@@ -1,0 +1,6 @@
+@mixin flex ($ustify, $saling) {
+
+    display: flex;
+    justify-content: $ustify ;
+    align-items: $aling;
+}

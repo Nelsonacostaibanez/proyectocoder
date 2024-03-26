@@ -8,7 +8,9 @@ footer{
     height: 50px;
     align-items: center;
     width: auto;
-    
+    @include flex (center, center);
+/* se que tengo que eliminar los otros estilos, pero como no me esta compilando bien scss lo dejo asi */
+
     ul{
         list-style-type: none;
         display: flex;
