@@ -1,6 +1,7 @@
-@mixin flex ($ustify, $saling) {
+@mixin flex ( $ustify , $aling ) {
 
     display: flex;
     justify-content: $ustify ;
     align-items: $aling;
 }
+ 

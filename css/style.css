@@ -4,9 +4,14 @@ footer {
   height: 50px;
   padding: 35px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 50px;
   align-items: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* se que tengo que eliminar los otros estilos, pero como no me esta compilando bien scss lo dejo asi */
 }
 footer ul {
   list-style-type: none;
@@ -139,6 +144,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
 }
+.seccioncontactos div iframe {
+  width: 100%;
+}
 
 .seccion-nosotros-1 {
   display: flex;
@@ -181,79 +189,103 @@ body {
   color: rgb(243, 87, 87);
 }
 
-@media screen and (max-width:500px){
-
-  .gred-conteiner{
+@media screen and (max-width: 500px) {
+  .gred-conteiner {
     display: inline-block;
     justify-content: space-around;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 100%);
-  
   }
-  
-  .mensajeprincipal h1{
-   
+  .mensajeprincipal h1 {
     width: 50%;
-
+  }
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  header ul li {
+    font-size: small;
+  }
+  .mapaa {
+    width: 1fr;
+    height: 1fr;
+  }
+  .mapaaa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .seccioncontactos {
+    width: 1fr;
+    flex-direction: column;
+  }
 }
-
-header{
-
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  padding-bottom: 15px;
-}
-
-header ul li{
-  font-size: small;
-}
-
-.mapaa{
-  width: 1fr;
-  height: 1fr;
-}
-
-.mapaaa{
-position: relative;
-width: 100%;
-height: 100%;
-}
-
-.seccioncontactos{
-  width: 1fr;
-  flex-direction: column;
-  margin-left: 0%;
-}
-
-.seccioncontactos div iframe{
-  width: 100%;
-}
-
-}
-
-@media screen and (max-width:750px){
-
-  .gred-conteiner{
+@media screen and (max-width: 750px) {
+  .gred-conteiner {
     display: inline-block;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin: 10px;
-  
   }
-  
-
-
-
-.seccioncontactos{
-  width: 100%;
-  display: inline-block;
- margin-left: 0%;
+  .seccioncontactos {
+    width: auto;
+    display: inline-block;
+  }
 }
-.seccioncontactos div iframe{
-  width: 100%;
+@media screen and (max-width: 500px) {
+  .gred-conteiner {
+    display: inline-block;
+    justify-content: space-around;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 100%);
+  }
+  .mensajeprincipal h1 {
+    width: 50%;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  header ul li {
+    font-size: small;
+  }
+  .mapaa {
+    width: 1fr;
+    height: 1fr;
+  }
+  .mapaaa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .seccioncontactos {
+    width: 1fr;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .seccioncontactos div iframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .gred-conteiner {
+    display: inline-block;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+  }
+  .seccioncontactos {
+    width: 100%;
+    display: inline-block;
+    margin-left: 0%;
+  }
+  .seccioncontactos div iframe {
+    width: 100%;
+  }
 }
 
-
-}
 /*# sourceMappingURL=style.css.map */
