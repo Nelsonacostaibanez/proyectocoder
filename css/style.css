@@ -1,18 +1,291 @@
-/* Error: expected "{".
- *    ,
- * 16 | }git
- *    |     ^
- *    '
- *   scss\layout\_contacto.scss 16:5  @import
- *   scss\style.scss 7:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 16 \2502  }git\a    \2502      ^\a    \2575 \a   scss\\layout\\_contacto.scss 16:5  @import\a   scss\\style.scss 7:9              root stylesheet';
+footer {
+  background-color: #283538;
+  margin-top: 35px;
+  height: 50px;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* se que tengo que eliminar los otros estilos, pero como no me esta compilando bien scss lo dejo asi */
 }
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+footer ul li a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 15px;
+  margin-top: 30px;
+}
+
+Header {
+  position: sticky;
+  top: 10px;
+  background-color: #283538;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  margin-top: 15px;
+  z-index: 200;
+}
+Header img {
+  width: 105px;
+  transition: 1s;
+}
+Header img:hover {
+  height: 70px;
+  width: 70px;
+}
+Header ul {
+  list-style-type: none;
+  display: flex;
+}
+Header ul li a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 15px;
+  margin-top: 30px;
+}
+
+body {
+  margin: 0%;
+}
+
+.fontarial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.test {
+  margin: 35px;
+}
+
+.backgris {
+  background-color: #283538;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.mensajeprincipal h1 {
+  color: #283538;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 70px 50px;
+  width: 50px;
+  margin-bottom: 200px;
+}
+.mensajeprincipal h1 span.cambiodecolor {
+  color: rgb(243, 87, 87);
+}
+
+.gred-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 150px 150px;
+  gap: 35PX;
+  margin: 35px;
+}
+.gred-conteiner .gred-items-01 {
+  background-color: #283538;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  padding: 25px;
+  border-radius: 5px;
+}
+.gred-conteiner .gred-items-01 h2 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.gred-conteiner .gred-items-01 p {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 30%;
+  overflow: auto;
+  height: 100%;
+}
+.gred-conteiner .gred-items-02 {
+  background-color: #97B595;
+  grid-column: 3/4;
+  grid-row: 1/4;
+  border-radius: 5px;
+  padding: 20px;
+}
+.gred-conteiner .gred-items-02 #videoinicio {
+  width: 100%;
+}
+.gred-conteiner .gred-items-03 {
+  background-color: #97B595;
+  grid-column: 1/3;
+  padding: 20px;
+  border-radius: 5px;
+}
+.gred-conteiner .gred-items-03 p {
+  height: 100%;
+  overflow: auto;
+}
+
+.seccioncontactos {
+  padding: 20px;
+  display: flex;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+.seccioncontactos div iframe {
+  width: 100%;
+}
+
+.seccion-nosotros-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 35px;
+  background-color: #283538;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.seccion-nosotros-1 h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 70px 50px;
+  width: 50px;
+  width: 50px;
+  margin-bottom: 200px;
+  align-items: initial;
+}
+.seccion-nosotros-1 h1 span {
+  color: rgb(243, 87, 87);
+}
+.seccion-nosotros-1 p {
+  padding: 30px;
+  width: 300px;
+  overflow: auto;
+  height: 100%;
+  color: white;
+}
+.seccion-nosotros-1 h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 70px 50px;
+  width: 50px;
+  width: 50px;
+  margin-bottom: 200px;
+  align-items: initial;
+}
+.seccion-nosotros-1 h2 span {
+  color: rgb(243, 87, 87);
+}
+
+@media screen and (max-width: 500px) {
+  .gred-conteiner {
+    display: inline-block;
+    justify-content: space-around;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 100%);
+  }
+  .mensajeprincipal h1 {
+    width: 50%;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  header ul li {
+    font-size: small;
+  }
+  .mapaa {
+    width: 1fr;
+    height: 1fr;
+  }
+  .mapaaa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .seccioncontactos {
+    width: 1fr;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .gred-conteiner {
+    display: inline-block;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+  }
+  .seccioncontactos {
+    width: auto;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gred-conteiner {
+    display: inline-block;
+    justify-content: space-around;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 100%);
+  }
+  .mensajeprincipal h1 {
+    width: 50%;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  header ul li {
+    font-size: small;
+  }
+  .mapaa {
+    width: 1fr;
+    height: 1fr;
+  }
+  .mapaaa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .seccioncontactos {
+    width: 1fr;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .seccioncontactos div iframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .gred-conteiner {
+    display: inline-block;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+  }
+  .seccioncontactos {
+    width: 100%;
+    display: inline-block;
+    margin-left: 0%;
+  }
+  .seccioncontactos div iframe {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
