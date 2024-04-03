@@ -3,11 +3,7 @@ footer{
     margin-top: 35px;
     height: 50px;
     padding: 35px;
-    display: flex;
-    justify-content: center;
     height: 50px;
-    align-items: center;
-    width: auto;
     @include flex (center, center);
 /* se que tengo que eliminar los otros estilos, pero como no me esta compilando bien scss lo dejo asi */
 
